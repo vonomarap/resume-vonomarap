@@ -18,6 +18,7 @@ type ProjectCardProps = {
     stack: readonly string[];
     features: readonly string[];
     githubUrl: string;
+    detailsUrl: string;
   };
   copy: {
     tag: string;
@@ -73,7 +74,7 @@ export function ProjectCard({ project, copy }: ProjectCardProps) {
           </a>
         </Button>
         <Button asChild variant="outline" className="flex-1">
-          <a href={project.githubUrl} target="_blank" rel="noreferrer">
+          <a href={project.detailsUrl} target="_blank" rel="noreferrer">
             {copy.secondaryButton}
             <ArrowUpRight className="h-4 w-4" />
           </a>
