@@ -1,0 +1,26 @@
+export const skillGroups = {
+  confident: [
+    "Java",
+    "Spring Boot",
+    "Spring MVC",
+    "Spring Data JPA",
+    "SQL",
+    "PostgreSQL",
+    "MySQL",
+    "REST API",
+    "Swagger / OpenAPI",
+    "Git",
+    "Maven",
+    "Gradle",
+    "Postman",
+  ],
+  learning: [
+    "Spring Security",
+    "Docker",
+    "JUnit",
+    "Mockito",
+    "Redis",
+    "Kafka",
+    "CI/CD",
+  ],
+} as const;
