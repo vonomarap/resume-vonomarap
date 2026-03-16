@@ -2,7 +2,7 @@ export const educationContent = {
   ru: {
     section: {
       eyebrow: "Образование",
-      title: "Образование и самостоятельное развитие без выдуманного опыта",
+      title: "Образование и самостоятельное развитие",
       description:
         "Раздел показывает реальную образовательную базу и то, как backend-навыки усиливаются через самостоятельную практику.",
     },
@@ -25,9 +25,9 @@ export const educationContent = {
     selfStudyTopics: ["Java", "Spring Framework", "SQL", "MySQL", "PostgreSQL"],
     learningSection: {
       eyebrow: "Сейчас изучаю",
-      title: "Следующий шаг — сделать backend-базу глубже и стабильнее",
+      title: "Следующий шаг — углублять backend-базу и практику",
       description:
-        "Зона роста остается реалистичной: усиление текущего профиля через более глубокое понимание Java, Spring и проектирования данных.",
+        "Сейчас основной фокус — более глубокое понимание Java, Spring и проектирования данных.",
       roadmapLabel: "Текущий фокус",
       roadmapTitle:
         "Развитие backend-мышления через системную практику и более уверенную работу с базовыми технологиями",
@@ -45,7 +45,7 @@ export const educationContent = {
   en: {
     section: {
       eyebrow: "Education",
-      title: "Education and self-study presented without invented experience",
+      title: "Education and self-study",
       description:
         "This section keeps the real educational foundation visible and shows how backend skills are being strengthened through self-directed practice.",
     },
@@ -68,9 +68,9 @@ export const educationContent = {
     selfStudyTopics: ["Java", "Spring Framework", "SQL", "MySQL", "PostgreSQL"],
     learningSection: {
       eyebrow: "Learning Now",
-      title: "The next step is making the backend foundation deeper and more consistent",
+      title: "The next step is deepening the backend foundation and practice",
       description:
-        "The growth area stays realistic: strengthen the current profile through deeper understanding of Java, Spring, and data design.",
+        "The current focus is a deeper understanding of Java, Spring, and data design.",
       roadmapLabel: "Current focus",
       roadmapTitle:
         "Building stronger backend habits through steady practice and deeper work with core technologies",

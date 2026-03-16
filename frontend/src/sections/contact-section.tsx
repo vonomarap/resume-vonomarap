@@ -99,10 +99,7 @@ export function ContactSection() {
 
           <Reveal delay={0.08}>
             <Card>
-              <CardHeader>
-                <CardTitle>{copy.formTitle}</CardTitle>
-              </CardHeader>
-              <CardContent>
+              <CardContent className="pt-6">
                 <Form {...form}>
                   <form className="space-y-5" onSubmit={onSubmit} noValidate>
                     <FormField

@@ -2,9 +2,9 @@ export const projectsContent = {
   ru: {
     section: {
       eyebrow: "Проекты",
-      title: "Проекты остаются главным подтверждением навыков на junior-уровне",
+      title: "Учебные и pet-проекты по backend-разработке",
       description:
-        "Пока без коммерческого опыта, именно учебные и pet-проекты показывают подход к backend-разработке. Эти карточки остаются демонстрационными и их легко заменить на реальные проекты позже.",
+        "В этом разделе собраны учебные и pet-проекты. Карточки можно заменить на актуальные проекты по мере обновления портфолио.",
     },
     card: {
       tag: "Учебный / pet project",
@@ -39,9 +39,9 @@ export const projectsContent = {
   en: {
     section: {
       eyebrow: "Projects",
-      title: "Projects remain the main proof of capability at a junior level",
+      title: "Study and pet backend projects",
       description:
-        "Without commercial experience yet, study and pet projects are the clearest signal of backend thinking. These cards remain demo placeholders and can be replaced with real projects later.",
+        "This section contains study and pet projects. The cards can be replaced with current projects as the portfolio evolves.",
     },
     card: {
       tag: "Study / pet project",

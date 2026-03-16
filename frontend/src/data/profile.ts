@@ -25,7 +25,7 @@ export const profiles = {
     ],
     aboutSection: {
       eyebrow: "Обо мне",
-      title: "Junior backend-профиль с честной технической базой и потенциалом роста",
+      title: "Junior backend-разработчик с фокусом на Java, Spring и реляционных базах данных",
     },
     aboutHighlights: [
       {
@@ -65,7 +65,7 @@ export const profiles = {
         "Углубление backend-базы через практику на Java, Spring и реляционных базах данных.",
       strengthTitle: "Сильная сторона",
       strengthDescription:
-        "Честный junior-профиль с уверенной основой в Java, SQL и работе с реляционными БД.",
+        "Уверенная база в Java, SQL и работе с реляционными БД.",
       projectsLabel: "Посмотреть backend-проекты",
     },
   },
@@ -95,7 +95,7 @@ export const profiles = {
     ],
     aboutSection: {
       eyebrow: "About",
-      title: "A junior backend profile built on real fundamentals and room to grow",
+      title: "Junior backend developer focused on Java, Spring, and relational databases",
     },
     aboutHighlights: [
       {
@@ -133,9 +133,9 @@ export const profiles = {
       priorityTitle: "Current priority",
       priorityDescription:
         "Strengthening backend fundamentals through practical work with Java, Spring, and relational databases.",
-      strengthTitle: "Strength signal",
+      strengthTitle: "Core strengths",
       strengthDescription:
-        "An honest junior profile with a solid base in Java, SQL, and relational database work.",
+        "Solid base in Java, SQL, and relational database work.",
       projectsLabel: "Explore backend projects",
     },
   },

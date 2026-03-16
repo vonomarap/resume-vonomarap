@@ -41,12 +41,11 @@ export const contactContent = {
   ru: {
     section: {
       eyebrow: "Контакты",
-      title: "Простой и честный способ связаться без лишней сложности",
+      title: "Простой способ связаться",
       description:
         "Секция оставляет прямые контакты и аккуратную форму, которая валидирует данные в браузере и подготавливает письмо в почтовом клиенте.",
     },
     directTitle: "Связаться напрямую",
-    formTitle: "Написать сообщение",
     form: {
       nameLabel: "Имя",
       namePlaceholder: "Ваше имя",
@@ -70,18 +69,17 @@ export const contactContent = {
       },
     },
     footerSignature:
-      "Сайт-резюме с централизованным контентом, аккуратным frontend-слоем и честной подачей junior backend-профиля.",
+      "Сайт-резюме с централизованным контентом, аккуратным frontend-слоем и сдержанной подачей junior backend-профиля.",
     footerRights: "Все права защищены.",
   },
   en: {
     section: {
       eyebrow: "Contact",
-      title: "A simple and honest contact flow without unnecessary complexity",
+      title: "A simple way to get in touch",
       description:
         "This section keeps direct contact links and a lightweight form that validates in the browser and prepares a message in the user's email client.",
     },
     directTitle: "Reach out directly",
-    formTitle: "Send a message",
     form: {
       nameLabel: "Name",
       namePlaceholder: "Your name",
