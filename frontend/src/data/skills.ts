@@ -10,7 +10,7 @@ export const skillsContent = {
     categories: [
       {
         title: "Backend",
-        items: ["Java", "Spring Framework"],
+        items: ["Java", "Spring Framework", "SOLID", "ООП"],
       },
       {
         title: "Базы данных",
@@ -33,6 +33,7 @@ export const skillsContent = {
       "Развитие навыков в экосистеме Spring",
       "SQL и проектирование реляционных баз данных",
       "Расширение практики backend-разработки",
+      "RAG",
     ],
   },
   en: {
@@ -46,7 +47,7 @@ export const skillsContent = {
     categories: [
       {
         title: "Backend",
-        items: ["Java", "Spring Framework"],
+        items: ["Java", "Spring Framework", "SOLID", "OOP"],
       },
       {
         title: "Databases",
@@ -69,6 +70,7 @@ export const skillsContent = {
       "Growing within the Spring ecosystem",
       "SQL and relational database design",
       "Expanding backend development practice",
+      "RAG",
     ],
   },
 } as const;

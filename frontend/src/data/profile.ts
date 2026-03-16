@@ -2,7 +2,7 @@ export const profiles = {
   ru: {
     metaTitle: "Vlad | Junior Java / Spring Backend Developer",
     metaDescription:
-      "Сайт-резюме Vlad, junior backend-разработчика с фокусом на Java, Spring, SQL и реляционные базы данных.",
+      "Сайт-резюме Vlad, разработчика с фокусом на Java, Spring, SQL и реляционные базы данных.",
     firstName: "Vlad",
     fullName: "Vlad",
     role: "Junior Java / Spring Backend Developer",
