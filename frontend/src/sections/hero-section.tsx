@@ -22,7 +22,7 @@ export function HeroSection() {
               {profile.role}
             </Badge>
             <div className="space-y-5">
-              <h1 className="text-balance text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
+              <h1 className="text-balance font-heading text-4xl font-extrabold tracking-tight text-gradient sm:text-5xl lg:text-6xl">
                 {profile.headline}
               </h1>
               <p className="max-w-2xl text-balance text-lg leading-8 text-muted-foreground">
@@ -73,7 +73,7 @@ export function HeroSection() {
             <CardHeader className="pb-4">
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-3">
-                  <span className="flex h-11 w-11 items-center justify-center rounded-2xl border border-primary/20 bg-primary/10 text-primary">
+                  <span className="flex h-11 w-11 items-center justify-center rounded-2xl border border-primary/20 bg-primary/10 text-primary shadow-[0_0_16px_-4px_hsl(var(--primary)/0.4)]">
                     <Terminal className="h-5 w-5" />
                   </span>
                   <div>
@@ -89,7 +89,8 @@ export function HeroSection() {
               </div>
             </CardHeader>
             <CardContent className="space-y-6">
-              <div className="rounded-[28px] border border-border/70 bg-slate-950 px-5 py-5 font-mono text-sm text-slate-200 shadow-panel">
+              {/* ---------- terminal block ---------- */}
+              <div className="rounded-[28px] border border-primary/15 bg-[hsl(270_40%_6%)] px-5 py-5 font-mono text-sm text-purple-100 shadow-panel">
                 <div className="mb-4 flex gap-2">
                   <span className="h-3 w-3 rounded-full bg-rose-400" />
                   <span className="h-3 w-3 rounded-full bg-amber-300" />
@@ -98,7 +99,7 @@ export function HeroSection() {
                 <div className="space-y-3">
                   {profile.developerSnapshot.lines.map((line) => (
                     <div key={line} className="flex gap-3">
-                      <span className="text-primary">$</span>
+                      <span className="text-[hsl(270_85%_68%)]">$</span>
                       <span>{line}</span>
                     </div>
                   ))}

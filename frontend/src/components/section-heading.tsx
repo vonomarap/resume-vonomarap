@@ -16,7 +16,7 @@ export function SectionHeading({
       <Badge variant="outline" className="font-mono uppercase tracking-[0.24em]">
         {eyebrow}
       </Badge>
-      <h2 className="text-balance text-3xl font-extrabold tracking-tight sm:text-4xl">
+      <h2 className="text-balance font-heading text-3xl font-extrabold tracking-tight text-gradient sm:text-4xl">
         {title}
       </h2>
       <p className="text-balance text-base leading-7 text-muted-foreground sm:text-lg">

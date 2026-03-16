@@ -41,14 +41,28 @@ const config: Config = {
       },
       fontFamily: {
         sans: ["Manrope", "system-ui", "sans-serif"],
+        heading: ["Space Grotesk", "Manrope", "system-ui", "sans-serif"],
         mono: ["JetBrains Mono", "monospace"],
       },
       backgroundImage: {
         "hero-glow":
-          "radial-gradient(circle at top left, rgba(56, 189, 248, 0.2), transparent 42%), radial-gradient(circle at bottom right, rgba(14, 165, 233, 0.12), transparent 28%)",
+          "radial-gradient(circle at top left, rgba(139, 92, 246, 0.22), transparent 42%), radial-gradient(circle at bottom right, rgba(217, 119, 6, 0.10), transparent 28%)",
+        "aurora-gradient":
+          "linear-gradient(135deg, hsl(270 80% 56%), hsl(300 70% 60%), hsl(35 95% 56%))",
       },
       boxShadow: {
-        panel: "0 20px 60px -30px rgba(15, 23, 42, 0.35)",
+        panel: "0 20px 60px -30px rgba(120, 60, 200, 0.25)",
+        glow: "0 0 40px -12px rgba(139, 92, 246, 0.3)",
+        "glow-amber": "0 0 40px -12px rgba(217, 119, 6, 0.2)",
+      },
+      keyframes: {
+        "float-slow": {
+          "0%, 100%": { transform: "translateY(0px)" },
+          "50%": { transform: "translateY(-8px)" },
+        },
+      },
+      animation: {
+        "float-slow": "float-slow 6s ease-in-out infinite",
       },
     },
   },

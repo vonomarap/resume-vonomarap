@@ -30,7 +30,8 @@ type ProjectCardProps = {
 export function ProjectCard({ project, copy }: ProjectCardProps) {
   return (
     <Card className="group h-full overflow-hidden">
-      <div className="h-1 w-full bg-gradient-to-r from-primary via-sky-400 to-cyan-300" />
+      {/* aurora gradient top accent */}
+      <div className="h-1 w-full bg-aurora-gradient aurora-border" />
       <CardHeader className="space-y-4">
         <div className="flex items-start justify-between gap-4">
           <div className="space-y-2">
@@ -39,7 +40,7 @@ export function ProjectCard({ project, copy }: ProjectCardProps) {
               {project.description}
             </CardDescription>
           </div>
-          <span className="rounded-full border border-primary/20 bg-primary/10 px-3 py-1 text-xs font-mono uppercase tracking-[0.2em] text-primary">
+          <span className="rounded-full border border-primary/20 bg-primary/10 px-3 py-1 text-xs font-mono uppercase tracking-[0.2em] text-primary shadow-[0_0_12px_-4px_hsl(var(--primary)/0.3)]">
             {copy.tag}
           </span>
         </div>
@@ -58,7 +59,7 @@ export function ProjectCard({ project, copy }: ProjectCardProps) {
         <ul className="grid gap-3 text-sm text-muted-foreground">
           {project.features.map((feature) => (
             <li key={feature} className="flex items-start gap-3">
-              <span className="mt-1.5 h-2 w-2 rounded-full bg-primary" />
+              <span className="mt-1.5 h-2 w-2 rounded-full bg-primary shadow-[0_0_8px_1px_hsl(var(--primary)/0.4)]" />
               <span>{feature}</span>
             </li>
           ))}

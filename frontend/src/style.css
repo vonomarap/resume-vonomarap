@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Manrope:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -6,48 +6,48 @@
 
 @layer base {
   :root {
-    --background: 220 40% 98%;
-    --foreground: 222 47% 11%;
-    --card: 0 0% 100%;
-    --card-foreground: 222 47% 11%;
+    --background: 270 30% 97%;
+    --foreground: 270 60% 8%;
+    --card: 270 20% 99%;
+    --card-foreground: 270 60% 8%;
     --popover: 0 0% 100%;
-    --popover-foreground: 222 47% 11%;
-    --primary: 205 82% 42%;
-    --primary-foreground: 210 40% 98%;
-    --secondary: 210 40% 96%;
-    --secondary-foreground: 222 47% 11%;
-    --muted: 214 32% 93%;
-    --muted-foreground: 215 16% 42%;
-    --accent: 197 70% 52%;
-    --accent-foreground: 210 40% 98%;
+    --popover-foreground: 270 60% 8%;
+    --primary: 270 80% 56%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 270 30% 94%;
+    --secondary-foreground: 270 60% 12%;
+    --muted: 270 20% 92%;
+    --muted-foreground: 270 10% 40%;
+    --accent: 35 95% 56%;
+    --accent-foreground: 35 95% 10%;
     --destructive: 0 72% 51%;
     --destructive-foreground: 210 40% 98%;
-    --border: 214 32% 88%;
-    --input: 214 32% 88%;
-    --ring: 205 82% 42%;
+    --border: 270 20% 88%;
+    --input: 270 20% 88%;
+    --ring: 270 80% 56%;
     --radius: 1rem;
   }
 
   .dark {
-    --background: 222 47% 8%;
-    --foreground: 210 40% 98%;
-    --card: 222 47% 10%;
-    --card-foreground: 210 40% 98%;
-    --popover: 222 47% 10%;
-    --popover-foreground: 210 40% 98%;
-    --primary: 194 85% 58%;
-    --primary-foreground: 222 47% 11%;
-    --secondary: 217 33% 16%;
-    --secondary-foreground: 210 40% 98%;
-    --muted: 217 33% 16%;
-    --muted-foreground: 215 20% 70%;
-    --accent: 191 90% 50%;
-    --accent-foreground: 222 47% 11%;
+    --background: 270 40% 4%;
+    --foreground: 270 10% 96%;
+    --card: 270 30% 7%;
+    --card-foreground: 270 10% 96%;
+    --popover: 270 30% 7%;
+    --popover-foreground: 270 10% 96%;
+    --primary: 270 85% 68%;
+    --primary-foreground: 270 60% 6%;
+    --secondary: 270 25% 12%;
+    --secondary-foreground: 270 10% 92%;
+    --muted: 270 25% 12%;
+    --muted-foreground: 270 10% 64%;
+    --accent: 35 95% 60%;
+    --accent-foreground: 35 95% 6%;
     --destructive: 0 63% 50%;
     --destructive-foreground: 210 40% 98%;
-    --border: 217 33% 22%;
-    --input: 217 33% 22%;
-    --ring: 194 85% 58%;
+    --border: 270 25% 16%;
+    --input: 270 25% 16%;
+    --ring: 270 85% 68%;
   }
 
   * {
@@ -61,26 +61,44 @@
   body {
     @apply bg-background text-foreground antialiased;
     font-family: "Manrope", system-ui, sans-serif;
-    background-image:
-      radial-gradient(circle at top, rgba(14, 165, 233, 0.14), transparent 34%),
-      radial-gradient(circle at 90% 10%, rgba(14, 165, 233, 0.08), transparent 22%);
     min-height: 100vh;
+    overflow-x: hidden;
   }
 
+  /* ----------  aurora blobs  ---------- */
+  body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: -1;
+    background:
+      radial-gradient(ellipse 80% 60% at 10% 0%, hsla(270, 80%, 56%, 0.18), transparent 50%),
+      radial-gradient(ellipse 60% 50% at 90% 10%, hsla(300, 70%, 50%, 0.12), transparent 45%),
+      radial-gradient(ellipse 70% 50% at 50% 95%, hsla(35, 95%, 56%, 0.10), transparent 45%),
+      radial-gradient(ellipse 50% 40% at 70% 60%, hsla(270, 70%, 50%, 0.06), transparent 40%);
+  }
+
+  .dark body::after,
+  .dark body::before {
+    opacity: 1;
+  }
+
+  /* ----------  subtle dot-pattern  ---------- */
   body::before {
     content: "";
     position: fixed;
     inset: 0;
     pointer-events: none;
+    z-index: -1;
     background-image:
-      linear-gradient(to right, rgba(148, 163, 184, 0.08) 1px, transparent 1px),
-      linear-gradient(to bottom, rgba(148, 163, 184, 0.08) 1px, transparent 1px);
-    background-size: 56px 56px;
-    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.24), transparent 85%);
+      radial-gradient(circle, hsla(270, 30%, 50%, 0.08) 1px, transparent 1px);
+    background-size: 32px 32px;
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), transparent 70%);
   }
 
   ::selection {
-    background: hsl(var(--primary) / 0.2);
+    background: hsl(var(--primary) / 0.22);
   }
 }
 
@@ -94,10 +112,45 @@
   }
 
   .surface-panel {
-    @apply border border-border/70 bg-card/80 shadow-[0_20px_60px_-30px_rgba(15,23,42,0.28)] backdrop-blur;
+    @apply border border-border/60 bg-card/70 shadow-[0_8px_40px_-16px_rgba(120,60,200,0.15)] backdrop-blur-xl;
   }
 
   .text-balance {
     text-wrap: balance;
+  }
+
+  /* gradient text helper */
+  .text-gradient {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(135deg, hsl(var(--primary)), hsl(300 70% 60%), hsl(var(--accent)));
+  }
+
+  /* glow ring on cards */
+  .glow-ring {
+    position: relative;
+  }
+  .glow-ring::before {
+    content: "";
+    position: absolute;
+    inset: -1px;
+    border-radius: inherit;
+    padding: 1px;
+    background: linear-gradient(135deg, hsl(var(--primary) / 0.3), hsl(300 70% 60% / 0.2), hsl(var(--accent) / 0.15));
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+  }
+
+  /* animated aurora shimmer for special elements */
+  @keyframes aurora-shift {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+  }
+
+  .aurora-border {
+    background-size: 200% 200%;
+    animation: aurora-shift 6s ease-in-out infinite;
   }
 }

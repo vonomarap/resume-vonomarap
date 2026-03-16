@@ -25,7 +25,7 @@ export function EducationSection() {
             {content.items.map((item, index) => (
               <Reveal key={item.title} delay={index * 0.06}>
                 <Card className="relative">
-                  <span className="absolute -left-[1.55rem] top-8 h-3 w-3 rounded-full bg-primary" />
+                  <span className="absolute -left-[1.55rem] top-8 h-3 w-3 rounded-full bg-primary shadow-[0_0_10px_2px_hsl(var(--primary)/0.4)]" />
                   <CardHeader>
                     <p className="font-mono text-xs uppercase tracking-[0.22em] text-primary">
                       {item.period}

@@ -28,19 +28,19 @@ export function Header({ activeSection }: HeaderProps) {
   const copy = headerCopy[locale];
 
   return (
-    <header className="sticky top-0 z-40 border-b border-border/60 bg-background/80 backdrop-blur-xl">
+    <header className="sticky top-0 z-40 border-b border-border/40 bg-background/60 backdrop-blur-2xl">
       <div className="container-shell flex h-20 items-center justify-between gap-4">
-        <a href="#home" className="flex items-center gap-3">
-          <span className="flex h-11 w-11 items-center justify-center rounded-2xl bg-primary text-lg font-extrabold text-primary-foreground shadow-panel">
+        <a href="#home" className="flex items-center gap-3 group">
+          <span className="flex h-11 w-11 items-center justify-center rounded-2xl bg-primary text-lg font-extrabold text-primary-foreground shadow-[0_4px_20px_-6px_hsl(var(--primary)/0.45)] transition-shadow duration-300 group-hover:shadow-[0_4px_28px_-4px_hsl(var(--primary)/0.6)]">
             V
           </span>
           <div>
-            <p className="text-sm font-semibold text-foreground">Vlad</p>
+            <p className="font-heading text-sm font-semibold text-foreground">Vlad</p>
             <p className="text-xs text-muted-foreground">{copy.roleLabel}</p>
           </div>
         </a>
 
-        <nav className="hidden items-center gap-2 lg:flex">
+        <nav className="hidden items-center gap-1 lg:flex">
           {navigation.map((item) => {
             const itemId = item.href.slice(1);
             const isActive = activeSection === itemId;
@@ -50,8 +50,8 @@ export function Header({ activeSection }: HeaderProps) {
                 key={item.href}
                 href={item.href}
                 className={cn(
-                  "rounded-full px-4 py-2 text-sm font-medium text-muted-foreground transition-colors hover:bg-muted/70 hover:text-foreground",
-                  isActive && "bg-primary/10 text-primary",
+                  "rounded-full px-4 py-2 text-sm font-medium text-muted-foreground transition-all duration-300 hover:bg-primary/5 hover:text-foreground",
+                  isActive && "bg-primary/10 text-primary shadow-[0_0_12px_-4px_hsl(var(--primary)/0.3)]",
                 )}
               >
                 {item.label}
@@ -91,9 +91,9 @@ export function Header({ activeSection }: HeaderProps) {
                       <a
                         href={item.href}
                         className={cn(
-                          "rounded-2xl border border-border/70 px-4 py-3 text-base font-medium transition-colors hover:bg-muted/60",
+                          "rounded-2xl border border-border/70 px-4 py-3 text-base font-medium transition-all duration-300 hover:bg-primary/5",
                           activeSection === itemId &&
-                            "border-primary/30 bg-primary/10 text-primary",
+                            "border-primary/30 bg-primary/10 text-primary shadow-[0_0_16px_-6px_hsl(var(--primary)/0.3)]",
                         )}
                       >
                         {item.label}
