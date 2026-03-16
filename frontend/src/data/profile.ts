@@ -7,7 +7,7 @@ export const profiles = {
     fullName: "Vlad",
     role: "Junior Java / Spring Backend Developer",
     headline:
-      "Разрабатываю backend-приложения на Java и Spring и работаю с SQL и реляционными базами данных.",
+      "Разрабатываю backend-приложения на Java и Spring.",
     tagline:
       "Начинающий backend-разработчик, сфокусированный на Java, Spring Framework, SQL, MySQL и PostgreSQL.",
     summary:

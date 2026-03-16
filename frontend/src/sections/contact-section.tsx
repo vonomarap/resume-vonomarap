@@ -9,6 +9,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 export function ContactSection() {
   const { locale } = useLocale();
   const copy = contactContent[locale];
+  const description = "description" in copy.section ? (copy.section.description as string) : undefined;
 
   return (
     <section id="contact" className="section-shell">
@@ -17,7 +18,7 @@ export function ContactSection() {
           <SectionHeading
             eyebrow={copy.section.eyebrow}
             title={copy.section.title}
-            description={copy.section.description}
+            description={description}
           />
         </Reveal>
 

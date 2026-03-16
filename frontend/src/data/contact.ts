@@ -42,8 +42,6 @@ export const contactContent = {
     section: {
       eyebrow: "Контакты",
       title: "Простой способ связаться",
-      description:
-        "Секция оставляет прямые контакты, по которым можно быстро связаться удобным способом.",
     },
     directTitle: "Связаться напрямую",
     footerSignature:
@@ -54,8 +52,6 @@ export const contactContent = {
     section: {
       eyebrow: "Contact",
       title: "A simple way to get in touch",
-      description:
-        "This section keeps direct contact links so it is easy to reach out through the preferred channel.",
     },
     directTitle: "Reach out directly",
     footerSignature:

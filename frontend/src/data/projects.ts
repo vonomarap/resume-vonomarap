@@ -4,7 +4,7 @@ export const projectsContent = {
       eyebrow: "Проекты",
       title: "Учебные и pet-проекты по backend-разработке",
       description:
-        "В этом разделе собраны учебные и pet-проекты. Карточки можно заменить на актуальные проекты по мере обновления портфолио.",
+        "В этом разделе собраны учебные и pet-проекты.",
     },
     card: {
       tag: "Учебный / pet project",
@@ -41,7 +41,7 @@ export const projectsContent = {
       eyebrow: "Projects",
       title: "Study and pet backend projects",
       description:
-        "This section contains study and pet projects. The cards can be replaced with current projects as the portfolio evolves.",
+        "This section contains study and pet projects.",
     },
     card: {
       tag: "Study / pet project",
