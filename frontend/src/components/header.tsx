@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Menu } from "lucide-react";
 
+import vladHeader from "@/assets/vlad-header.jpg";
 import { headerCopy, navigationItems } from "@/data/navigation";
 import { useLocale } from "@/hooks/use-locale";
 import { cn } from "@/lib/utils";
@@ -31,8 +32,8 @@ export function Header({ activeSection }: HeaderProps) {
     <header className="sticky top-0 z-40 border-b border-border/40 bg-background/60 backdrop-blur-2xl">
       <div className="container-shell flex h-20 items-center justify-between gap-4">
         <a href="#home" className="flex items-center gap-3 group">
-          <span className="flex h-11 w-11 items-center justify-center rounded-2xl bg-primary text-lg font-extrabold text-primary-foreground shadow-[0_4px_20px_-6px_hsl(var(--primary)/0.45)] transition-shadow duration-300 group-hover:shadow-[0_4px_28px_-4px_hsl(var(--primary)/0.6)]">
-            V
+          <span className="h-11 w-11 overflow-hidden rounded-2xl border border-primary/20 bg-primary/10 shadow-[0_4px_20px_-6px_hsl(var(--primary)/0.45)] transition-shadow duration-300 group-hover:shadow-[0_4px_28px_-4px_hsl(var(--primary)/0.6)]">
+            <img src={vladHeader} alt="Portrait of Vlad" className="h-full w-full object-cover" />
           </span>
           <div>
             <p className="font-heading text-sm font-semibold text-foreground">Vlad</p>
