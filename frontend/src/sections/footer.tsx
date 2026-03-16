@@ -11,7 +11,7 @@ export function Footer() {
     <footer className="border-t border-border/60 py-10">
       <div className="container-shell flex flex-col gap-8 lg:flex-row lg:items-center lg:justify-between">
         <div className="space-y-3">
-          <p className="font-heading text-lg font-semibold">Vlad</p>
+          <p className="font-brand text-2xl leading-none text-foreground">Vlad</p>
           <p className="max-w-xl text-sm leading-6 text-muted-foreground">
             {copy.footerSignature}
           </p>

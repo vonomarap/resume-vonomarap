@@ -42,6 +42,7 @@ const config: Config = {
       fontFamily: {
         sans: ["Manrope", "system-ui", "sans-serif"],
         heading: ["Space Grotesk", "Manrope", "system-ui", "sans-serif"],
+        brand: ["Cloick", "Space Grotesk", "Manrope", "system-ui", "sans-serif"],
         mono: ["JetBrains Mono", "monospace"],
       },
       backgroundImage: {

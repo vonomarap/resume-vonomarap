@@ -22,7 +22,7 @@ export function HeroSection() {
               {profile.role}
             </Badge>
             <div className="space-y-5">
-              <h1 className="text-balance font-heading text-4xl font-extrabold tracking-tight text-gradient sm:text-5xl lg:text-6xl">
+              <h1 className="text-balance font-brand text-4xl leading-[0.98] text-gradient sm:text-5xl lg:text-6xl">
                 {profile.headline}
               </h1>
               <p className="max-w-2xl text-balance text-lg leading-8 text-muted-foreground">

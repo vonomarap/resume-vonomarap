@@ -36,7 +36,7 @@ export function Header({ activeSection }: HeaderProps) {
             <img src={vladHeader} alt="Portrait of Vlad" className="h-full w-full object-cover" />
           </span>
           <div>
-            <p className="font-heading text-sm font-semibold text-foreground">Vlad</p>
+            <p className="font-brand text-base leading-none text-foreground">Vlad</p>
             <p className="text-xs text-muted-foreground">{copy.roleLabel}</p>
           </div>
         </a>
