@@ -1,8 +1,10 @@
 import { useState } from "react";
 import { Menu } from "lucide-react";
 
-import { navigationItems } from "@/data/navigation";
+import { headerCopy, navigationItems } from "@/data/navigation";
+import { useLocale } from "@/hooks/use-locale";
 import { cn } from "@/lib/utils";
+import { LanguageToggle } from "@/components/language-toggle";
 import { ThemeToggle } from "@/components/theme-toggle";
 import { Button } from "@/components/ui/button";
 import {
@@ -21,6 +23,9 @@ type HeaderProps = {
 
 export function Header({ activeSection }: HeaderProps) {
   const [open, setOpen] = useState(false);
+  const { locale } = useLocale();
+  const navigation = navigationItems[locale];
+  const copy = headerCopy[locale];
 
   return (
     <header className="sticky top-0 z-40 border-b border-border/60 bg-background/80 backdrop-blur-xl">
@@ -31,12 +36,12 @@ export function Header({ activeSection }: HeaderProps) {
           </span>
           <div>
             <p className="text-sm font-semibold text-foreground">Vlad</p>
-            <p className="text-xs text-muted-foreground">Java / Spring Backend</p>
+            <p className="text-xs text-muted-foreground">{copy.roleLabel}</p>
           </div>
         </a>
 
         <nav className="hidden items-center gap-2 lg:flex">
-          {navigationItems.map((item) => {
+          {navigation.map((item) => {
             const itemId = item.href.slice(1);
             const isActive = activeSection === itemId;
 
@@ -56,29 +61,29 @@ export function Header({ activeSection }: HeaderProps) {
         </nav>
 
         <div className="hidden items-center gap-3 lg:flex">
+          <LanguageToggle />
           <ThemeToggle />
           <Button asChild variant="outline">
-            <a href="#contact">Contact Me</a>
+            <a href="#contact">{copy.contactButton}</a>
           </Button>
         </div>
 
         <div className="flex items-center gap-3 lg:hidden">
+          <LanguageToggle />
           <ThemeToggle />
           <Sheet open={open} onOpenChange={setOpen}>
             <SheetTrigger asChild>
-              <Button variant="outline" size="icon" aria-label="Open menu">
+              <Button variant="outline" size="icon" aria-label={copy.openMenuLabel}>
                 <Menu className="h-5 w-5" />
               </Button>
             </SheetTrigger>
             <SheetContent>
               <SheetHeader>
-                <SheetTitle>Navigate</SheetTitle>
-                <SheetDescription>
-                  Explore sections of the resume website.
-                </SheetDescription>
+                <SheetTitle>{copy.mobileTitle}</SheetTitle>
+                <SheetDescription>{copy.mobileDescription}</SheetDescription>
               </SheetHeader>
               <nav className="mt-4 flex flex-col gap-3">
-                {navigationItems.map((item) => {
+                {navigation.map((item) => {
                   const itemId = item.href.slice(1);
 
                   return (

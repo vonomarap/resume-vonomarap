@@ -7,12 +7,17 @@ type ContactFormValues = {
 export function createMailtoLink(
   emailLink: { value: string } | undefined,
   values: ContactFormValues,
+  copy: {
+    subjectPrefix: string;
+    nameLabel: string;
+    emailLabel: string;
+  },
 ) {
   const emailAddress = emailLink?.value || "your@email.com";
-  const subject = `Portfolio contact from ${values.name}`;
+  const subject = `${copy.subjectPrefix} ${values.name}`;
   const body = [
-    `Name: ${values.name}`,
-    `Email: ${values.email}`,
+    `${copy.nameLabel}: ${values.name}`,
+    `${copy.emailLabel}: ${values.email}`,
     "",
     values.message,
   ].join("\n");

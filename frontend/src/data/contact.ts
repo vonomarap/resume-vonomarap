@@ -1,25 +1,111 @@
 export const contactLinks = [
   {
-    label: "Email",
+    id: "email",
+    label: {
+      ru: "Email",
+      en: "Email",
+    },
     value: "your@email.com",
     href: "mailto:your@email.com",
   },
   {
-    label: "Telegram",
+    id: "telegram",
+    label: {
+      ru: "Telegram",
+      en: "Telegram",
+    },
     value: "@yourusername",
     href: "https://t.me/yourusername",
   },
   {
-    label: "GitHub",
+    id: "github",
+    label: {
+      ru: "GitHub",
+      en: "GitHub",
+    },
     value: "github.com/yourusername",
     href: "https://github.com/yourusername",
   },
   {
-    label: "LinkedIn",
+    id: "linkedin",
+    label: {
+      ru: "LinkedIn",
+      en: "LinkedIn",
+    },
     value: "linkedin.com/in/yourusername",
     href: "https://linkedin.com/in/yourusername",
   },
 ] as const;
 
-export const footerSignature =
-  "Built as a focused frontend resume site with structured content files, direct contact options, and a clean engineering-style UI.";
+export const contactContent = {
+  ru: {
+    section: {
+      eyebrow: "Контакты",
+      title: "Простой и честный способ связаться без лишней сложности",
+      description:
+        "Секция оставляет прямые контакты и аккуратную форму, которая валидирует данные в браузере и подготавливает письмо в почтовом клиенте.",
+    },
+    directTitle: "Связаться напрямую",
+    formTitle: "Написать сообщение",
+    form: {
+      nameLabel: "Имя",
+      namePlaceholder: "Ваше имя",
+      emailLabel: "Email",
+      emailPlaceholder: "your@email.com",
+      messageLabel: "Сообщение",
+      messagePlaceholder: "Напишите о вакансии, проекте или вопросе.",
+      description:
+        "Форма проверяет данные в браузере и открывает готовый черновик письма.",
+      successMessage: "Открываю почтовый клиент с подготовленным письмом.",
+      submitLabel: "Подготовить письмо",
+      validation: {
+        name: "Введите имя.",
+        email: "Введите корректный email.",
+        message: "Введите не менее 10 символов.",
+      },
+      mailto: {
+        subjectPrefix: "Сообщение с сайта от",
+        nameLabel: "Имя",
+        emailLabel: "Email",
+      },
+    },
+    footerSignature:
+      "Сайт-резюме с централизованным контентом, аккуратным frontend-слоем и честной подачей junior backend-профиля.",
+    footerRights: "Все права защищены.",
+  },
+  en: {
+    section: {
+      eyebrow: "Contact",
+      title: "A simple and honest contact flow without unnecessary complexity",
+      description:
+        "This section keeps direct contact links and a lightweight form that validates in the browser and prepares a message in the user's email client.",
+    },
+    directTitle: "Reach out directly",
+    formTitle: "Send a message",
+    form: {
+      nameLabel: "Name",
+      namePlaceholder: "Your name",
+      emailLabel: "Email",
+      emailPlaceholder: "your@email.com",
+      messageLabel: "Message",
+      messagePlaceholder: "Tell me about your opportunity, project, or question.",
+      description:
+        "The form validates in the browser and opens a pre-filled email draft.",
+      successMessage: "Opening your email client with a pre-filled message.",
+      submitLabel: "Prepare Email",
+      validation: {
+        name: "Please enter your name.",
+        email: "Please enter a valid email address.",
+        message: "Please enter at least 10 characters.",
+      },
+      mailto: {
+        subjectPrefix: "Portfolio contact from",
+        nameLabel: "Name",
+        emailLabel: "Email",
+      },
+    },
+    footerSignature:
+      "Built as a focused resume site with centralized content files, direct contact options, and a clean engineering-style UI.",
+    footerRights: "All rights reserved.",
+  },
+} as const;

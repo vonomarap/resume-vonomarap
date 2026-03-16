@@ -1,6 +1,10 @@
+import { useEffect } from "react";
+
 import { Header } from "@/components/header";
 import { useActiveSection } from "@/hooks/use-active-section";
-import { navigationItems } from "@/data/navigation";
+import { useLocale } from "@/hooks/use-locale";
+import { observableSectionIds } from "@/data/navigation";
+import { profiles } from "@/data/profile";
 import { AboutSection } from "@/sections/about-section";
 import { ContactSection } from "@/sections/contact-section";
 import { EducationSection } from "@/sections/education-section";
@@ -10,10 +14,17 @@ import { LearningNowSection } from "@/sections/learning-now-section";
 import { ProjectsSection } from "@/sections/projects-section";
 import { SkillsSection } from "@/sections/skills-section";
 
-const observableSectionIds = ["home", ...navigationItems.map((item) => item.href.slice(1))];
-
 export default function App() {
-  const activeSection = useActiveSection(observableSectionIds);
+  const { locale } = useLocale();
+  const activeSection = useActiveSection([...observableSectionIds]);
+  const profile = profiles[locale];
+
+  useEffect(() => {
+    document.title = profile.metaTitle;
+
+    const metaDescription = document.querySelector('meta[name="description"]');
+    metaDescription?.setAttribute("content", profile.metaDescription);
+  }, [profile.metaDescription, profile.metaTitle]);
 
   return (
     <div className="relative min-h-screen">

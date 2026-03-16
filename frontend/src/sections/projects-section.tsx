@@ -1,24 +1,28 @@
-import { projects } from "@/data/projects";
+import { projectsContent } from "@/data/projects";
+import { useLocale } from "@/hooks/use-locale";
 import { ProjectCard } from "@/components/project-card";
 import { Reveal } from "@/components/reveal";
 import { SectionHeading } from "@/components/section-heading";
 
 export function ProjectsSection() {
+  const { locale } = useLocale();
+  const content = projectsContent[locale];
+
   return (
     <section id="projects" className="section-shell">
       <div className="container-shell space-y-10">
         <Reveal>
           <SectionHeading
-            eyebrow="Projects"
-            title="Projects are the core proof of capability"
-            description="Without commercial experience, the strongest signal comes from how backend projects are structured, documented, and presented. These cards are intentionally designed to look serious and engineering-focused."
+            eyebrow={content.section.eyebrow}
+            title={content.section.title}
+            description={content.section.description}
           />
         </Reveal>
 
         <div className="grid gap-6 xl:grid-cols-3">
-          {projects.map((project, index) => (
+          {content.items.map((project, index) => (
             <Reveal key={project.title} delay={index * 0.08} className="h-full">
-              <ProjectCard project={project} />
+              <ProjectCard project={project} copy={content.card} />
             </Reveal>
           ))}
         </div>

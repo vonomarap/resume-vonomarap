@@ -1,16 +1,20 @@
-import { profile } from "@/data/profile";
+import { profiles } from "@/data/profile";
+import { useLocale } from "@/hooks/use-locale";
 import { Reveal } from "@/components/reveal";
 import { SectionHeading } from "@/components/section-heading";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 export function AboutSection() {
+  const { locale } = useLocale();
+  const profile = profiles[locale];
+
   return (
     <section id="about" className="section-shell">
       <div className="container-shell space-y-10">
         <Reveal>
           <SectionHeading
-            eyebrow="About"
-            title="A junior backend profile built around practical progress"
+            eyebrow={profile.aboutSection.eyebrow}
+            title={profile.aboutSection.title}
             description={profile.summary}
           />
         </Reveal>

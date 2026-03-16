@@ -1,18 +1,22 @@
-import { skillGroups } from "@/data/skills";
+import { skillsContent } from "@/data/skills";
+import { useLocale } from "@/hooks/use-locale";
 import { Reveal } from "@/components/reveal";
 import { SectionHeading } from "@/components/section-heading";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 export function SkillsSection() {
+  const { locale } = useLocale();
+  const content = skillsContent[locale];
+
   return (
     <section id="skills" className="section-shell">
       <div className="container-shell space-y-10">
         <Reveal>
           <SectionHeading
-            eyebrow="Skills"
-            title="Clear separation between tools I use confidently and areas I am actively leveling up"
-            description="The goal is honest positioning: show what I can already build with confidence, while making current growth areas visible instead of hiding them."
+            eyebrow={content.section.eyebrow}
+            title={content.section.title}
+            description={content.section.description}
           />
         </Reveal>
 
@@ -20,13 +24,25 @@ export function SkillsSection() {
           <Reveal>
             <Card className="h-full">
               <CardHeader>
-                <CardTitle>Confident</CardTitle>
+                <CardTitle>{content.categoriesTitle}</CardTitle>
               </CardHeader>
-              <CardContent className="flex flex-wrap gap-3">
-                {skillGroups.confident.map((skill) => (
-                  <Badge key={skill} className="px-4 py-2 text-sm">
-                    {skill}
-                  </Badge>
+              <CardContent className="grid gap-4 sm:grid-cols-2">
+                {content.categories.map((group) => (
+                  <div
+                    key={group.title}
+                    className="rounded-[24px] border border-border/70 bg-background/60 p-4"
+                  >
+                    <p className="font-mono text-xs uppercase tracking-[0.22em] text-muted-foreground">
+                      {group.title}
+                    </p>
+                    <div className="mt-4 flex flex-wrap gap-2">
+                      {group.items.map((skill) => (
+                        <Badge key={`${group.title}-${skill}`} className="px-3 py-1.5 text-sm">
+                          {skill}
+                        </Badge>
+                      ))}
+                    </div>
+                  </div>
                 ))}
               </CardContent>
             </Card>
@@ -35,14 +51,19 @@ export function SkillsSection() {
           <Reveal delay={0.08}>
             <Card className="h-full">
               <CardHeader>
-                <CardTitle>Learning</CardTitle>
+                <CardTitle>{content.learningTitle}</CardTitle>
               </CardHeader>
-              <CardContent className="flex flex-wrap gap-3">
-                {skillGroups.learning.map((skill) => (
-                  <Badge key={skill} variant="secondary" className="px-4 py-2 text-sm">
-                    {skill}
-                  </Badge>
-                ))}
+              <CardContent className="space-y-4">
+                <p className="text-sm leading-7 text-muted-foreground">
+                  {content.learningDescription}
+                </p>
+                <div className="flex flex-wrap gap-3">
+                  {content.learning.map((skill) => (
+                    <Badge key={skill} variant="secondary" className="px-4 py-2 text-sm">
+                      {skill}
+                    </Badge>
+                  ))}
+                </div>
               </CardContent>
             </Card>
           </Reveal>

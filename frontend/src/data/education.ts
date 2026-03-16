@@ -1,36 +1,88 @@
-export const educationItems = [
-  {
-    title: "University / Formal Education",
-    period: "Add your dates here",
-    description:
-      "Replace this placeholder with your university, degree, or formal education details.",
+export const educationContent = {
+  ru: {
+    section: {
+      eyebrow: "Образование",
+      title: "Образование и самостоятельное развитие без выдуманного опыта",
+      description:
+        "Раздел показывает реальную образовательную базу и то, как backend-навыки усиливаются через самостоятельную практику.",
+    },
+    items: [
+      {
+        title: "Ростовский колледж связи и информатики (РКСИ)",
+        period: "Выпуск 2024",
+        description: "Специальность: техник-программист.",
+      },
+      {
+        title: "Самостоятельное развитие в backend",
+        period: "Продолжается",
+        description:
+          "Практика в Java, Spring, SQL и реляционных базах данных через учебные задачи и pet-проекты.",
+      },
+    ],
+    selfStudyTitle: "Фокус самостоятельного обучения",
+    selfStudyDescription:
+      "Основной прогресс сейчас приходит через закрепление базы в backend-разработке и регулярную практику на небольших проектах.",
+    selfStudyTopics: ["Java", "Spring Framework", "SQL", "MySQL", "PostgreSQL"],
+    learningSection: {
+      eyebrow: "Сейчас изучаю",
+      title: "Следующий шаг — сделать backend-базу глубже и стабильнее",
+      description:
+        "Зона роста остается реалистичной: усиление текущего профиля через более глубокое понимание Java, Spring и проектирования данных.",
+      roadmapLabel: "Текущий фокус",
+      roadmapTitle:
+        "Развитие backend-мышления через системную практику и более уверенную работу с базовыми технологиями",
+      roadmapDescription:
+        "Сейчас упор идет на углубление Java, развитие в экосистеме Spring, улучшение работы с SQL и проектированием БД, а также на накопление реальной backend-практики.",
+      badges: ["Java", "Spring", "SQL", "Проектирование БД", "Практика"],
+      topics: [
+        "Углубление знаний Java",
+        "Развитие навыков в экосистеме Spring",
+        "Усиление знаний SQL и проектирования баз данных",
+        "Расширение практики backend-разработки",
+      ],
+    },
   },
-  {
-    title: "Courses",
-    period: "Add your course timeline",
-    description:
-      "Replace this with the strongest backend, Java, or Spring courses you have completed.",
+  en: {
+    section: {
+      eyebrow: "Education",
+      title: "Education and self-study presented without invented experience",
+      description:
+        "This section keeps the real educational foundation visible and shows how backend skills are being strengthened through self-directed practice.",
+    },
+    items: [
+      {
+        title: "Rostov College of Communications and Informatics (RKSI)",
+        period: "Graduated in 2024",
+        description: "Qualification: technician-programmer.",
+      },
+      {
+        title: "Self-study in backend development",
+        period: "Ongoing",
+        description:
+          "Practice in Java, Spring, SQL, and relational databases through study tasks and pet projects.",
+      },
+    ],
+    selfStudyTitle: "Self-study focus areas",
+    selfStudyDescription:
+      "Most current progress comes from reinforcing backend fundamentals and applying them regularly in small practical projects.",
+    selfStudyTopics: ["Java", "Spring Framework", "SQL", "MySQL", "PostgreSQL"],
+    learningSection: {
+      eyebrow: "Learning Now",
+      title: "The next step is making the backend foundation deeper and more consistent",
+      description:
+        "The growth area stays realistic: strengthen the current profile through deeper understanding of Java, Spring, and data design.",
+      roadmapLabel: "Current focus",
+      roadmapTitle:
+        "Building stronger backend habits through steady practice and deeper work with core technologies",
+      roadmapDescription:
+        "The emphasis is on deepening Java, growing inside the Spring ecosystem, improving SQL and database design skills, and expanding real backend practice.",
+      badges: ["Java", "Spring", "SQL", "DB design", "Practice"],
+      topics: [
+        "Deepening Java knowledge",
+        "Growing within the Spring ecosystem",
+        "Strengthening SQL and database design skills",
+        "Expanding backend development practice",
+      ],
+    },
   },
-  {
-    title: "Self-Study Track",
-    period: "Ongoing",
-    description:
-      "Java Core, Spring Boot, SQL, REST API design, and backend architecture basics through practice projects and documentation.",
-  },
-] as const;
-
-export const selfStudyTopics = [
-  "Java Core",
-  "Spring Boot",
-  "SQL",
-  "REST API",
-  "Backend architecture basics",
-] as const;
-
-export const currentLearningTopics = [
-  "Spring Security",
-  "Docker",
-  "Backend testing",
-  "Clean Architecture",
-  "CI/CD basics",
-] as const;
+} as const;

@@ -1,26 +1,74 @@
-export const skillGroups = {
-  confident: [
-    "Java",
-    "Spring Boot",
-    "Spring MVC",
-    "Spring Data JPA",
-    "SQL",
-    "PostgreSQL",
-    "MySQL",
-    "REST API",
-    "Swagger / OpenAPI",
-    "Git",
-    "Maven",
-    "Gradle",
-    "Postman",
-  ],
-  learning: [
-    "Spring Security",
-    "Docker",
-    "JUnit",
-    "Mockito",
-    "Redis",
-    "Kafka",
-    "CI/CD",
-  ],
+export const skillsContent = {
+  ru: {
+    section: {
+      eyebrow: "Навыки",
+      title: "Подтвержденные технологии и честные направления роста",
+      description:
+        "Секция показывает реальные навыки, которые уже использую, и аккуратно отделяет направления, которые продолжаю усиливать.",
+    },
+    categoriesTitle: "Текущий стек",
+    categories: [
+      {
+        title: "Backend",
+        items: ["Java", "Spring Framework"],
+      },
+      {
+        title: "Базы данных",
+        items: ["SQL", "MySQL", "PostgreSQL"],
+      },
+      {
+        title: "Языки программирования",
+        items: ["Java", "Python"],
+      },
+      {
+        title: "Инструменты",
+        items: ["Git"],
+      },
+    ],
+    learningTitle: "Продолжаю усиливать",
+    learningDescription:
+      "Рост строю вокруг фундаментальных backend-навыков, а не вокруг случайного расширения стека ради количества технологий в резюме.",
+    learning: [
+      "Углубление знаний Java",
+      "Развитие навыков в экосистеме Spring",
+      "SQL и проектирование реляционных баз данных",
+      "Расширение практики backend-разработки",
+    ],
+  },
+  en: {
+    section: {
+      eyebrow: "Skills",
+      title: "Confirmed technologies and realistic growth directions",
+      description:
+        "This section shows the tools I already use and clearly separates the areas I am still strengthening.",
+    },
+    categoriesTitle: "Current stack",
+    categories: [
+      {
+        title: "Backend",
+        items: ["Java", "Spring Framework"],
+      },
+      {
+        title: "Databases",
+        items: ["SQL", "MySQL", "PostgreSQL"],
+      },
+      {
+        title: "Programming Languages",
+        items: ["Java", "Python"],
+      },
+      {
+        title: "Tools",
+        items: ["Git"],
+      },
+    ],
+    learningTitle: "Currently strengthening",
+    learningDescription:
+      "The growth path stays focused on backend fundamentals instead of inflating the stack with random advanced tools.",
+    learning: [
+      "Deepening Java knowledge",
+      "Growing within the Spring ecosystem",
+      "SQL and relational database design",
+      "Expanding backend development practice",
+    ],
+  },
 } as const;

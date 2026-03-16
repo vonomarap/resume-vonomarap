@@ -1,14 +1,17 @@
 import { ArrowDown, ArrowUpRight, Download, Github, Mail, Terminal } from "lucide-react";
 
 import { contactLinks } from "@/data/contact";
-import { profile } from "@/data/profile";
+import { profiles } from "@/data/profile";
+import { useLocale } from "@/hooks/use-locale";
 import { Reveal } from "@/components/reveal";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 export function HeroSection() {
-  const githubLink = contactLinks.find((item) => item.label === "GitHub")?.href ?? "#";
+  const { locale } = useLocale();
+  const profile = profiles[locale];
+  const githubLink = contactLinks.find((item) => item.id === "github")?.href ?? "#";
 
   return (
     <section id="home" className="section-shell overflow-hidden pt-16 sm:pt-20">
@@ -20,8 +23,7 @@ export function HeroSection() {
             </Badge>
             <div className="space-y-5">
               <h1 className="text-balance text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
-                Vlad builds backend systems that feel organized, reliable, and ready
-                to grow.
+                {profile.headline}
               </h1>
               <p className="max-w-2xl text-balance text-lg leading-8 text-muted-foreground">
                 {profile.tagline}
@@ -32,26 +34,26 @@ export function HeroSection() {
           <div className="flex flex-wrap gap-3">
             <Button asChild size="lg">
               <a href="#projects">
-                View Projects
+                {profile.heroButtons.projects}
                 <ArrowDown className="h-4 w-4" />
               </a>
             </Button>
             <Button asChild size="lg" variant="outline">
               <a href="./Vlad-Junior-Java-Backend-Developer-Resume.pdf" download>
                 <Download className="h-4 w-4" />
-                Download Resume
+                {profile.heroButtons.resume}
               </a>
             </Button>
             <Button asChild size="lg" variant="outline">
               <a href="#contact">
                 <Mail className="h-4 w-4" />
-                Contact Me
+                {profile.heroButtons.contact}
               </a>
             </Button>
             <Button asChild size="lg" variant="ghost">
               <a href={githubLink} target="_blank" rel="noreferrer">
                 <Github className="h-4 w-4" />
-                GitHub
+                {profile.heroButtons.github}
               </a>
             </Button>
           </div>
@@ -76,14 +78,14 @@ export function HeroSection() {
                   </span>
                   <div>
                     <p className="font-mono text-xs uppercase tracking-[0.22em] text-primary">
-                      Developer Snapshot
+                      {profile.developerSnapshot.eyebrow}
                     </p>
                     <CardTitle className="mt-1 text-2xl">
                       {profile.developerSnapshot.title}
                     </CardTitle>
                   </div>
                 </div>
-                <Badge variant="secondary">Available now</Badge>
+                <Badge variant="secondary">{profile.developerSnapshot.availabilityLabel}</Badge>
               </div>
             </CardHeader>
             <CardContent className="space-y-6">
@@ -114,25 +116,25 @@ export function HeroSection() {
               <div className="grid gap-4 rounded-[28px] border border-border/70 bg-background/70 p-5 sm:grid-cols-2">
                 <div>
                   <p className="font-mono text-xs uppercase tracking-[0.22em] text-muted-foreground">
-                    Current priority
+                    {profile.developerSnapshot.priorityTitle}
                   </p>
                   <p className="mt-2 text-sm font-medium">
-                    Building a convincing backend portfolio through project quality.
+                    {profile.developerSnapshot.priorityDescription}
                   </p>
                 </div>
                 <div>
                   <p className="font-mono text-xs uppercase tracking-[0.22em] text-muted-foreground">
-                    Strength signal
+                    {profile.developerSnapshot.strengthTitle}
                   </p>
                   <p className="mt-2 text-sm font-medium">
-                    Clean APIs, DTO boundaries, validation, and practical PostgreSQL use.
+                    {profile.developerSnapshot.strengthDescription}
                   </p>
                 </div>
               </div>
 
               <Button asChild variant="ghost" className="justify-start px-0">
                 <a href="#projects">
-                  Explore featured backend projects
+                  {profile.developerSnapshot.projectsLabel}
                   <ArrowUpRight className="h-4 w-4" />
                 </a>
               </Button>

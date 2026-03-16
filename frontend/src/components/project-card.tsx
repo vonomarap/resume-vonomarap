@@ -19,9 +19,15 @@ type ProjectCardProps = {
     features: readonly string[];
     githubUrl: string;
   };
+  copy: {
+    tag: string;
+    featuresLabel: string;
+    primaryButton: string;
+    secondaryButton: string;
+  };
 };
 
-export function ProjectCard({ project }: ProjectCardProps) {
+export function ProjectCard({ project, copy }: ProjectCardProps) {
   return (
     <Card className="group h-full overflow-hidden">
       <div className="h-1 w-full bg-gradient-to-r from-primary via-sky-400 to-cyan-300" />
@@ -34,7 +40,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
             </CardDescription>
           </div>
           <span className="rounded-full border border-primary/20 bg-primary/10 px-3 py-1 text-xs font-mono uppercase tracking-[0.2em] text-primary">
-            Pet project
+            {copy.tag}
           </span>
         </div>
         <div className="flex flex-wrap gap-2">
@@ -47,7 +53,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
       </CardHeader>
       <CardContent className="space-y-4">
         <p className="font-mono text-xs uppercase tracking-[0.22em] text-muted-foreground">
-          Implemented
+          {copy.featuresLabel}
         </p>
         <ul className="grid gap-3 text-sm text-muted-foreground">
           {project.features.map((feature) => (
@@ -62,12 +68,12 @@ export function ProjectCard({ project }: ProjectCardProps) {
         <Button asChild className="flex-1">
           <a href={project.githubUrl} target="_blank" rel="noreferrer">
             <Github className="h-4 w-4" />
-            GitHub
+            {copy.primaryButton}
           </a>
         </Button>
         <Button asChild variant="outline" className="flex-1">
           <a href={project.githubUrl} target="_blank" rel="noreferrer">
-            Details
+            {copy.secondaryButton}
             <ArrowUpRight className="h-4 w-4" />
           </a>
         </Button>
