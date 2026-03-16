@@ -4,7 +4,7 @@ export const educationContent = {
       eyebrow: "Образование",
       title: "Образование и самостоятельное развитие",
       description:
-        "Раздел показывает реальную образовательную базу и то, как backend-навыки усиливаются через самостоятельную практику.",
+        "Образовательная база и самостоятельное развитие в backend.",
     },
     items: [
       {
@@ -21,7 +21,7 @@ export const educationContent = {
     ],
     selfStudyTitle: "Фокус самостоятельного обучения",
     selfStudyDescription:
-      "Основной прогресс сейчас приходит через закрепление базы в backend-разработке и регулярную практику на небольших проектах.",
+      "Основной прогресс — через закрепление backend-фундамента на небольших практических проектах.",
     selfStudyTopics: ["Java", "Spring Framework", "SQL", "MySQL", "PostgreSQL"],
     learningSection: {
       eyebrow: "Сейчас изучаю",
@@ -30,9 +30,9 @@ export const educationContent = {
         "Сейчас основной фокус — более глубокое понимание Java, Spring и проектирования данных.",
       roadmapLabel: "Текущий фокус",
       roadmapTitle:
-        "Развитие backend-мышления через системную практику и более уверенную работу с базовыми технологиями",
+        "Углубляю знания в Java, Spring, SQL и проектировании баз данных",
       roadmapDescription:
-        "Сейчас упор идет на углубление Java, развитие в экосистеме Spring, улучшение работы с SQL и проектированием БД, а также на накопление реальной backend-практики.",
+        "Упор на углубление Java, развитие в экосистеме Spring, работу с SQL и проектированием БД.",
       badges: ["Java", "Spring", "SQL", "Проектирование БД", "Практика"],
       topics: [
         "Углубление знаний Java",
@@ -47,7 +47,7 @@ export const educationContent = {
       eyebrow: "Education",
       title: "Education and self-study",
       description:
-        "This section keeps the real educational foundation visible and shows how backend skills are being strengthened through self-directed practice.",
+        "Formal education and ongoing self-directed backend practice.",
     },
     items: [
       {
@@ -64,7 +64,7 @@ export const educationContent = {
     ],
     selfStudyTitle: "Self-study focus areas",
     selfStudyDescription:
-      "Most current progress comes from reinforcing backend fundamentals and applying them regularly in small practical projects.",
+      "Progress comes from reinforcing backend fundamentals on small practical projects.",
     selfStudyTopics: ["Java", "Spring Framework", "SQL", "MySQL", "PostgreSQL"],
     learningSection: {
       eyebrow: "Learning Now",
@@ -73,9 +73,9 @@ export const educationContent = {
         "The current focus is a deeper understanding of Java, Spring, and data design.",
       roadmapLabel: "Current focus",
       roadmapTitle:
-        "Building stronger backend habits through steady practice and deeper work with core technologies",
+        "Deepening Java, Spring, SQL, and database design skills",
       roadmapDescription:
-        "The emphasis is on deepening Java, growing inside the Spring ecosystem, improving SQL and database design skills, and expanding real backend practice.",
+        "Focused on deepening Java, growing within the Spring ecosystem, and improving SQL and database design.",
       badges: ["Java", "Spring", "SQL", "DB design", "Practice"],
       topics: [
         "Deepening Java knowledge",

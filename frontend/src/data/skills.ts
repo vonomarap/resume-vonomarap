@@ -4,7 +4,7 @@ export const skillsContent = {
       eyebrow: "Навыки",
       title: "Текущий стек и направления развития",
       description:
-        "Секция показывает реальные навыки, которые уже использую, и аккуратно отделяет направления, которые продолжаю усиливать.",
+        "Инструменты, которые уже использую, и направления, которые продолжаю развивать.",
     },
     categoriesTitle: "Текущий стек",
     categories: [
@@ -27,7 +27,7 @@ export const skillsContent = {
     ],
     learningTitle: "Продолжаю усиливать",
     learningDescription:
-      "Фокус развития остается на backend-фундаменте: Java, Spring, SQL и практической разработке.",
+      "Фокус — backend-фундамент: Java, Spring, SQL и практическая разработка.",
     learning: [
       "Углубление знаний Java",
       "Развитие навыков в экосистеме Spring",
@@ -41,7 +41,7 @@ export const skillsContent = {
       eyebrow: "Skills",
       title: "Current stack and growth areas",
       description:
-        "This section shows the tools I already use and clearly separates the areas I am still strengthening.",
+        "Tools already in use and areas still being developed.",
     },
     categoriesTitle: "Current stack",
     categories: [
@@ -64,7 +64,7 @@ export const skillsContent = {
     ],
     learningTitle: "Currently strengthening",
     learningDescription:
-      "The current learning path stays focused on backend fundamentals: Java, Spring, SQL, and practical development.",
+      "Focused on backend fundamentals: Java, Spring, SQL, and hands-on development.",
     learning: [
       "Deepening Java knowledge",
       "Growing within the Spring ecosystem",

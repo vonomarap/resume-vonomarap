@@ -9,9 +9,9 @@ export const profiles = {
     headline:
       "Разрабатываю backend-приложения на Java и Spring.",
     tagline:
-      "Начинающий backend-разработчик, сфокусированный на Java, Spring Framework, SQL, MySQL и PostgreSQL.",
+      "Начинающий backend-разработчик: Java, Spring Framework, SQL, MySQL и PostgreSQL.",
     summary:
-      "Я начинающий backend-разработчик, сфокусированный на Java и Spring. В 2024 году окончил Ростовский колледж связи и информатики (РКСИ) по специальности техник-программист. Работаю с SQL, MySQL и PostgreSQL, также использую Python и Git. Ищу junior-возможность для роста как backend engineer.",
+      "Backend-разработчик на Java и Spring. В 2024 году окончил РКСИ по специальности техник-программист. Работаю с SQL, MySQL и PostgreSQL, использую Python и Git. Ищу позицию junior backend-разработчика.",
     heroButtons: {
       projects: "Посмотреть проекты",
       resume: "Скачать резюме",
@@ -25,13 +25,13 @@ export const profiles = {
     ],
     aboutSection: {
       eyebrow: "Обо мне",
-      title: "Junior backend-разработчик с фокусом на Java, Spring и реляционных базах данных",
+      title: "Backend-разработчик на Java, Spring и реляционных базах данных",
     },
     aboutHighlights: [
       {
         title: "Backend-фокус",
         description:
-          "Основной стек строю вокруг Java и Spring Framework, постепенно усиливая backend-практику через собственные проекты.",
+          "Основной стек — Java и Spring Framework. Закрепляю навыки через собственные проекты.",
       },
       {
         title: "Образование",
@@ -41,18 +41,18 @@ export const profiles = {
       {
         title: "Базы данных",
         description:
-          "Работаю с SQL и имею практический опыт использования MySQL и PostgreSQL в учебных и pet-проектах.",
+          "Работаю с SQL, применяю MySQL и PostgreSQL в учебных и pet-проектах.",
       },
       {
         title: "Текущий вектор",
         description:
-          "Ищу junior-возможность, где смогу расти как backend engineer и усиливать практику разработки на Java и Spring.",
+          "Ищу позицию junior-разработчика, чтобы расти в backend и углублять практику на Java и Spring.",
       },
     ],
     developerSnapshot: {
       eyebrow: "Профиль разработчика",
       title: "backend-profile.ts",
-      availabilityLabel: "Открыт к junior-возможностям",
+      availabilityLabel: "Открыт к предложениям",
       lines: [
         "stack: Java, Spring Framework, SQL",
         "databases: MySQL, PostgreSQL",
@@ -62,10 +62,10 @@ export const profiles = {
       badges: ["Java", "Spring Framework", "SQL", "PostgreSQL", "Git"],
       priorityTitle: "Текущий фокус",
       priorityDescription:
-        "Углубление backend-базы через практику на Java, Spring и реляционных базах данных.",
+        "Углубляю знания Java, Spring и реляционных баз данных через практику.",
       strengthTitle: "Сильная сторона",
       strengthDescription:
-        "Уверенная база в Java, SQL и работе с реляционными БД.",
+        "Уверенная база в Java, SQL и реляционных БД.",
       projectsLabel: "Посмотреть backend-проекты",
     },
   },
@@ -79,9 +79,9 @@ export const profiles = {
     headline:
       "Building backend applications with Java and Spring while working with SQL and relational databases.",
     tagline:
-      "Entry-level backend developer focused on Java, Spring Framework, SQL, MySQL, and PostgreSQL.",
+      "Junior backend developer — Java, Spring Framework, SQL, MySQL, and PostgreSQL.",
     summary:
-      "I am a junior backend developer focused on Java and Spring. I graduated from Rostov College of Communications and Informatics (RKSI) in 2024 with a technician-programmer qualification. I work with SQL, MySQL, and PostgreSQL, and I also use Python and Git. I am looking for a junior opportunity to grow as a backend engineer.",
+      "Junior backend developer working with Java and Spring. Graduated from Rostov College of Communications and Informatics (RKSI) in 2024 as a technician-programmer. Experience with SQL, MySQL, PostgreSQL, Python, and Git. Looking for a junior backend role to grow as an engineer.",
     heroButtons: {
       projects: "View Projects",
       resume: "Download Resume",
@@ -95,13 +95,13 @@ export const profiles = {
     ],
     aboutSection: {
       eyebrow: "About",
-      title: "Junior backend developer focused on Java, Spring, and relational databases",
+      title: "Backend developer working with Java, Spring, and relational databases",
     },
     aboutHighlights: [
       {
         title: "Backend Focus",
         description:
-          "My core stack is centered on Java and Spring Framework, and I keep strengthening backend practice through personal projects.",
+          "Core stack is Java and Spring Framework. Building experience through personal projects.",
       },
       {
         title: "Education",
@@ -111,12 +111,12 @@ export const profiles = {
       {
         title: "Databases",
         description:
-          "I work with SQL and have hands-on experience using MySQL and PostgreSQL in study and pet projects.",
+          "Hands-on experience with SQL, MySQL, and PostgreSQL across study and pet projects.",
       },
       {
         title: "Current Direction",
         description:
-          "I am looking for a junior opportunity where I can grow as a backend engineer and deepen my Java and Spring practice.",
+          "Looking for a junior role to grow as a backend engineer and deepen Java and Spring practice.",
       },
     ],
     developerSnapshot: {
@@ -133,7 +133,7 @@ export const profiles = {
       priorityTitle: "Current priority",
       priorityDescription:
         "Strengthening backend fundamentals through practical work with Java, Spring, and relational databases.",
-      strengthTitle: "Core strengths",
+      strengthTitle: "Strength",
       strengthDescription:
         "Solid base in Java, SQL, and relational database work.",
       projectsLabel: "Explore backend projects",

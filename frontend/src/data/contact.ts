@@ -45,7 +45,7 @@ export const contactContent = {
     },
     directTitle: "Связаться напрямую",
     footerSignature:
-      "Сайт-резюме с централизованным контентом, аккуратным frontend-слоем и сдержанной подачей junior backend-профиля.",
+      "Сайт-резюме со сдержанным дизайном и аккуратной подачей backend-профиля.",
     footerRights: "Все права защищены.",
   },
   en: {
@@ -55,7 +55,7 @@ export const contactContent = {
     },
     directTitle: "Reach out directly",
     footerSignature:
-      "Built as a focused resume site with centralized content files, direct contact options, and a clean engineering-style UI.",
+      "A focused resume site with clean design and direct contact options.",
     footerRights: "All rights reserved.",
   },
 } as const;
