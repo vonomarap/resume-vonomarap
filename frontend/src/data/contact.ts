@@ -5,8 +5,8 @@ export const contactLinks = [
       ru: "Email",
       en: "Email",
     },
-    value: "your@email.com",
-    href: "mailto:your@email.com",
+    value: "fed.richter@gmail.com",
+    href: "mailto:fed.richter@gmail.com",
   },
   {
     id: "telegram",
@@ -14,8 +14,8 @@ export const contactLinks = [
       ru: "Telegram",
       en: "Telegram",
     },
-    value: "@yourusername",
-    href: "https://t.me/yourusername",
+    value: "@unecto",
+    href: "https://t.me/unecto",
   },
   {
     id: "github",
@@ -23,8 +23,8 @@ export const contactLinks = [
       ru: "GitHub",
       en: "GitHub",
     },
-    value: "github.com/yourusername",
-    href: "https://github.com/yourusername",
+    value: "github.com/vonomarap",
+    href: "https://github.com/vonomarap",
   },
   {
     id: "linkedin",
@@ -32,8 +32,8 @@ export const contactLinks = [
       ru: "LinkedIn",
       en: "LinkedIn",
     },
-    value: "linkedin.com/in/yourusername",
-    href: "https://linkedin.com/in/yourusername",
+    value: "linkedin.com/in/vonomarap",
+    href: "https://linkedin.com/in/vonomarap",
   },
 ] as const;
 
