@@ -52,8 +52,6 @@ export const contactContent = {
       title: "A simple way to get in touch",
     },
     directTitle: "Reach out directly",
-    footerSignature:
-      "A focused resume site with clean design and direct contact options.",
     footerRights: "All rights reserved.",
   },
 } as const;
