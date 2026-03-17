@@ -10,7 +10,6 @@ import { ContactSection } from "@/sections/contact-section";
 import { EducationSection } from "@/sections/education-section";
 import { Footer } from "@/sections/footer";
 import { HeroSection } from "@/sections/hero-section";
-import { LearningNowSection } from "@/sections/learning-now-section";
 import { ProjectsSection } from "@/sections/projects-section";
 import { SkillsSection } from "@/sections/skills-section";
 
@@ -35,7 +34,6 @@ export default function App() {
         <SkillsSection />
         <ProjectsSection />
         <EducationSection />
-        <LearningNowSection />
         <ContactSection />
       </main>
       <Footer />

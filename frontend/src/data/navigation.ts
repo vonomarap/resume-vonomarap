@@ -4,7 +4,6 @@ export const observableSectionIds = [
   "skills",
   "projects",
   "education",
-  "learning-now",
   "contact",
 ] as const;
 
@@ -14,7 +13,6 @@ export const navigationItems = {
     { label: "Навыки", href: "#skills" },
     { label: "Проекты", href: "#projects" },
     { label: "Образование", href: "#education" },
-    { label: "Изучаю", href: "#learning-now" },
     { label: "Контакты", href: "#contact" },
   ],
   en: [
@@ -22,7 +20,6 @@ export const navigationItems = {
     { label: "Skills", href: "#skills" },
     { label: "Projects", href: "#projects" },
     { label: "Education", href: "#education" },
-    { label: "Learning", href: "#learning-now" },
     { label: "Contact", href: "#contact" },
   ],
 } as const;
