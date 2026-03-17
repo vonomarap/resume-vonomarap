@@ -23,8 +23,8 @@ if (!browserPath) {
 
 const cvContent = {
   ru: {
-    fileName: "Vlad-Junior-Java-Backend-Developer-Resume-ru.pdf",
-    title: "Vlad",
+    fileName: "Vladislav-Paramonov-Junior-Java-Backend-Developer-Resume-ru.pdf",
+    title: "Владислав Парамонов",
     role: "Junior Java / Spring Backend Developer",
     contacts: [
       { label: "Email", value: "fed.richter@gmail.com", href: "mailto:fed.richter@gmail.com" },
@@ -85,8 +85,8 @@ const cvContent = {
     ],
   },
   en: {
-    fileName: "Vlad-Junior-Java-Backend-Developer-Resume-en.pdf",
-    title: "Vlad",
+    fileName: "Vladislav-Paramonov-Junior-Java-Backend-Developer-Resume-en.pdf",
+    title: "Владислав Парамонов",
     role: "Junior Java / Spring Backend Developer",
     contacts: [
       { label: "Email", value: "fed.richter@gmail.com", href: "mailto:fed.richter@gmail.com" },

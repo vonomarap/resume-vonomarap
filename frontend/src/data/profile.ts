@@ -18,7 +18,7 @@ export const profiles = {
       contact: "Связаться",
       github: "GitHub",
     },
-    resumeFile: "./Vlad-Junior-Java-Backend-Developer-Resume-ru.pdf",
+    resumeFile: "./Vladislav-Paramonov-Junior-Java-Backend-Developer-Resume-ru.pdf",
     heroBullets: [
       "Java + Spring Framework",
       "SQL, MySQL, PostgreSQL",
@@ -89,7 +89,7 @@ export const profiles = {
       contact: "Contact Me",
       github: "GitHub",
     },
-    resumeFile: "./Vlad-Junior-Java-Backend-Developer-Resume-en.pdf",
+    resumeFile: "./Vladislav-Paramonov-Junior-Java-Backend-Developer-Resume-en.pdf",
     heroBullets: [
       "Java + Spring Framework",
       "SQL, MySQL, PostgreSQL",
