@@ -14,14 +14,14 @@ const terminalLines = {
     { command: "echo $DATABASES", output: "MySQL, PostgreSQL" },
     { command: "echo $TOOLS", output: "Python, Git" },
     { command: "echo $STATUS", output: "Ищу позицию junior backend-разработчика" },
-    { command: "ls projects/", output: "task-api/  auth-service/  booking-service/" },
+    { command: "ls projects/", output: "auth-service/" },
   ],
   en: [
     { command: "cat profile.json", output: '{ "stack": "Java, Spring, SQL" }' },
     { command: "echo $DATABASES", output: "MySQL, PostgreSQL" },
     { command: "echo $TOOLS", output: "Python, Git" },
     { command: "echo $STATUS", output: "Looking for a junior backend role" },
-    { command: "ls projects/", output: "task-api/  auth-service/  booking-service/" },
+    { command: "ls projects/", output: "auth-service/" },
   ],
 } as const;
 
@@ -96,4 +96,3 @@ export function HeroSection() {
     </section>
   );
 }
-

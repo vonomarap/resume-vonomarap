@@ -7,6 +7,7 @@ import { SectionHeading } from "@/components/section-heading";
 export function ProjectsSection() {
   const { locale } = useLocale();
   const content = projectsContent[locale];
+  const singleCardLayout = content.items.length === 1;
 
   return (
     <section id="projects" className="section-shell">
@@ -19,7 +20,7 @@ export function ProjectsSection() {
           />
         </Reveal>
 
-        <div className="grid gap-6 xl:grid-cols-3">
+        <div className={singleCardLayout ? "mx-auto max-w-xl" : "grid gap-6 xl:grid-cols-3"}>
           {content.items.map((project, index) => (
             <Reveal key={project.title} delay={index * 0.08} className="h-full">
               <ProjectCard project={project} copy={content.card} />

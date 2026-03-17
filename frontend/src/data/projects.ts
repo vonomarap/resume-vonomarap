@@ -2,31 +2,17 @@ export const projectsContent = {
   ru: {
     section: {
       eyebrow: "Проекты",
-      title: "Учебные и pet-проекты по backend-разработке",
+      title: "Backend pet-проект",
       description:
-        "В этом разделе собраны самостоятельные backend-проекты с реальными API, документацией и рабочей инфраструктурой для локального запуска.",
+        "Здесь оставлен один актуальный backend-проект с реальным API, документацией и готовой инфраструктурой для локального запуска.",
     },
     card: {
-      tag: "Учебный / pet project",
+      tag: "Актуальный backend project",
       featuresLabel: "Реализовано",
       primaryButton: "GitHub",
       secondaryButton: "Подробнее",
     },
     items: [
-      {
-        title: "Task Management API",
-        description:
-          "REST API для управления пользователями и задачами с назначением исполнителя, фильтрацией, пагинацией и OpenAPI-документацией.",
-        stack: ["Java", "Spring Boot", "PostgreSQL", "Spring Data JPA", "OpenAPI"],
-        features: [
-          "CRUD для пользователей и задач",
-          "Назначение задач исполнителю",
-          "Фильтры по статусу и приоритету",
-          "DTO, валидация и обработка ошибок",
-        ],
-        githubUrl: "https://github.com/vonomarap/task-management-api",
-        detailsUrl: "https://github.com/vonomarap/task-management-api#readme",
-      },
       {
         title: "Auth Service",
         description:
@@ -41,50 +27,22 @@ export const projectsContent = {
         githubUrl: "https://github.com/vonomarap/auth-service",
         detailsUrl: "https://github.com/vonomarap/auth-service#readme",
       },
-      {
-        title: "Booking Service",
-        description:
-          "Сервис записи на встречи и временные слоты с управлением провайдерами, доступностью, бронированием, переносом и отменой.",
-        stack: ["Java", "Spring Boot", "PostgreSQL", "Docker Compose", "OpenAPI"],
-        features: [
-          "Провайдеры и доступные слоты",
-          "Бронирование, перенос и отмена",
-          "Статусы брони и проверка конфликтов",
-          "DTO, валидация и API-документация",
-        ],
-        githubUrl: "https://github.com/vonomarap/booking-service",
-        detailsUrl: "https://github.com/vonomarap/booking-service#readme",
-      },
     ],
   },
   en: {
     section: {
       eyebrow: "Projects",
-      title: "Study and pet backend projects",
+      title: "Current backend pet project",
       description:
-        "This section highlights standalone backend projects with working APIs, documentation, and local development infrastructure.",
+        "This section now highlights a single current backend project with a working API, documentation, and local development infrastructure.",
     },
     card: {
-      tag: "Study / pet project",
+      tag: "Current backend project",
       featuresLabel: "Implemented",
       primaryButton: "GitHub",
       secondaryButton: "Details",
     },
     items: [
-      {
-        title: "Task Management API",
-        description:
-          "REST API for managing users and tasks with assignment, filtering, pagination, and OpenAPI documentation.",
-        stack: ["Java", "Spring Boot", "PostgreSQL", "Spring Data JPA", "OpenAPI"],
-        features: [
-          "User and task CRUD",
-          "Task assignment workflow",
-          "Status and priority filtering",
-          "DTO validation and error handling",
-        ],
-        githubUrl: "https://github.com/vonomarap/task-management-api",
-        detailsUrl: "https://github.com/vonomarap/task-management-api#readme",
-      },
       {
         title: "Auth Service",
         description:
@@ -98,20 +56,6 @@ export const projectsContent = {
         ],
         githubUrl: "https://github.com/vonomarap/auth-service",
         detailsUrl: "https://github.com/vonomarap/auth-service#readme",
-      },
-      {
-        title: "Booking Service",
-        description:
-          "Appointment and slot booking service with provider availability, booking lifecycle, rescheduling, and conflict checks.",
-        stack: ["Java", "Spring Boot", "PostgreSQL", "Docker Compose", "OpenAPI"],
-        features: [
-          "Providers and availability slots",
-          "Booking, rescheduling, and cancellation",
-          "Status management and conflict prevention",
-          "DTO validation and API docs",
-        ],
-        githubUrl: "https://github.com/vonomarap/booking-service",
-        detailsUrl: "https://github.com/vonomarap/booking-service#readme",
       },
     ],
   },
