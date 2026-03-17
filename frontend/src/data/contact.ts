@@ -44,8 +44,6 @@ export const contactContent = {
       title: "Простой способ связаться",
     },
     directTitle: "Связаться напрямую",
-    footerSignature:
-      "Сайт-резюме со сдержанным дизайном и аккуратной подачей backend-профиля.",
     footerRights: "Все права защищены.",
   },
   en: {
