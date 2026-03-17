@@ -14,14 +14,20 @@ const terminalLines = {
     { command: "echo $DATABASES", output: "MySQL, PostgreSQL" },
     { command: "echo $TOOLS", output: "Python, Git" },
     { command: "echo $STATUS", output: "Ищу позицию junior backend-разработчика" },
-    { command: "ls projects/", output: "auth-service/" },
+    {
+      command: "ls projects/",
+      output: "auth-service/  kanokna/  admin-web/  mobile-app/  sql-learning-lab/",
+    },
   ],
   en: [
     { command: "cat profile.json", output: '{ "stack": "Java, Spring, SQL" }' },
     { command: "echo $DATABASES", output: "MySQL, PostgreSQL" },
     { command: "echo $TOOLS", output: "Python, Git" },
     { command: "echo $STATUS", output: "Looking for a junior backend role" },
-    { command: "ls projects/", output: "auth-service/" },
+    {
+      command: "ls projects/",
+      output: "auth-service/  kanokna/  admin-web/  mobile-app/  sql-learning-lab/",
+    },
   ],
 } as const;
 
