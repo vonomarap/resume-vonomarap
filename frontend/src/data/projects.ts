@@ -14,20 +14,6 @@ export const projectsContent = {
     },
     items: [
       {
-        title: "Auth Service",
-        description:
-          "Сервис аутентификации и авторизации с регистрацией, логином, JWT access token, refresh token и защищёнными endpoint-ами.",
-        stack: ["Java", "Spring Boot", "Spring Security", "JWT", "PostgreSQL"],
-        features: [
-          "Регистрация и логин",
-          "JWT access + refresh token flow",
-          "Роли и защищённые endpoints",
-          "BCrypt, DTO и глобальные ошибки",
-        ],
-        githubUrl: "https://github.com/vonomarap/auth-service",
-        detailsUrl: "https://github.com/vonomarap/auth-service#readme",
-      },
-      {
         title: "kanokna",
         description:
           "Fullstack-проект на Spring Boot и Angular, который показывает связку backend-логики и отдельного web-клиента.",
@@ -96,20 +82,6 @@ export const projectsContent = {
       secondaryButton: "Details",
     },
     items: [
-      {
-        title: "Auth Service",
-        description:
-          "Authentication and authorization service with registration, login, JWT access tokens, refresh tokens, and protected endpoints.",
-        stack: ["Java", "Spring Boot", "Spring Security", "JWT", "PostgreSQL"],
-        features: [
-          "Registration and login",
-          "JWT access + refresh token flow",
-          "Role-based protected endpoints",
-          "BCrypt, DTOs, and global errors",
-        ],
-        githubUrl: "https://github.com/vonomarap/auth-service",
-        detailsUrl: "https://github.com/vonomarap/auth-service#readme",
-      },
       {
         title: "kanokna",
         description:
