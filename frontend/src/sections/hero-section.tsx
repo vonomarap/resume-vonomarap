@@ -62,7 +62,7 @@ export function HeroSection() {
               </a>
             </Button>
             <Button asChild size="lg" variant="outline">
-              <a href="./Vlad-Junior-Java-Backend-Developer-Resume.pdf" download>
+              <a href={profile.resumeFile} download>
                 <Download className="h-4 w-4" />
                 {profile.heroButtons.resume}
               </a>
