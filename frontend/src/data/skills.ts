@@ -22,7 +22,7 @@ export const skillsContent = {
       },
       {
         title: "Инструменты",
-        items: ["Git"],
+        items: ["Git", "GitHub", "Codex", "Antigravity", "Maven", "Emdash"],
       },
     ],
     learningTitle: "Продолжаю усиливать",
@@ -59,7 +59,7 @@ export const skillsContent = {
       },
       {
         title: "Tools",
-        items: ["Git"],
+        items: ["Git", "GitHub", "Codex", "Antigravity", "Maven", "Emdash"],
       },
     ],
     learningTitle: "Currently strengthening",
